@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Arowolo Olawale Temidayo's student portfolio, projects and academic planner."
+    />
+    <title>Contact | Arowolo Olawale Temidayo</title>
+    <link rel="icon" href="assets/mark.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="index.html">Arowolo Olawale Temidayo</a>
+      <button class="menu" aria-expanded="false" aria-controls="navigation">
+        Menu ☰
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Academic Planner</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-title">
+        <h1>Contact</h1>
+      </section>
+      <section class="box">
+        <form id="contact-form" novalidate>
+          <div class="form-pair">
+            <div>
+              <label for="name">Full name</label
+              ><input
+                id="name"
+                name="name"
+                autocomplete="name"
+                maxlength="100"
+                aria-describedby="name-error"
+              /><small class="error" id="name-error"></small>
+            </div>
+            <div>
+              <label for="email">Email address</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                maxlength="200"
+                aria-describedby="email-error"
+              /><small class="error" id="email-error"></small>
+            </div>
+          </div>
+          <label for="phone">Phone number</label
+          ><input
+            id="phone"
+            name="phone"
+            type="tel"
+            inputmode="numeric"
+            autocomplete="tel"
+            aria-describedby="phone-hint phone-error"
+          /><small id="phone-hint">Digits only, for example 08012345678.</small
+          ><small class="error" id="phone-error"></small
+          ><label for="message">Message</label
+          ><textarea
+            id="message"
+            name="message"
+            rows="5"
+            maxlength="3000"
+            aria-describedby="message-error"
+          ></textarea
+          ><small class="error" id="message-error"></small
+          ><button class="button" type="submit">Check message</button>
+          <p id="contact-status" role="status"></p>
+        </form>
+        <p class="form-note muted">
+          Demo only. This form checks your details and does not send a message.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        © 2026 Arowolo Olawale Temidayo. COS 106 Term Project, MIVA Open
+        University.
+      </p>
+    </footer>
+    <dialog id="demo">
+      <button class="close" aria-label="Close demo">×</button>
+      <div id="demo-body"></div>
+    </dialog>
+  </body>
+</html>

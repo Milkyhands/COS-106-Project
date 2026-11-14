@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Arowolo Olawale Temidayo's student portfolio, projects and academic planner."
+    />
+    <title>Academic Planner | Arowolo Olawale Temidayo</title>
+    <link rel="icon" href="assets/mark.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="index.html">Arowolo Olawale Temidayo</a>
+      <button class="menu" aria-expanded="false" aria-controls="navigation">
+        Menu ☰
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html" aria-current="page">Academic Planner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-title">
+        <h1>Academic Planner</h1>
+      </section>
+      <div class="stats">
+        <div><span id="total">0</span><small>Total</small></div>
+        <div><span id="pending">0</span><small>To do</small></div>
+        <div><span id="complete">0</span><small>Done</small></div>
+        <div><span id="progress">0%</span><small>Progress</small></div>
+      </div>
+      <div class="planner-layout">
+        <section class="box">
+          <h2>Add a Task</h2>
+          <form id="task-form">
+            <label for="task-title">Task</label
+            ><input
+              id="task-title"
+              maxlength="160"
+              required
+              placeholder="e.g. Complete COS 106 assignment"
+            /><label for="task-date">Due date <span>(optional)</span></label
+            ><input id="task-date" type="date" /><label for="task-priority"
+              >Priority</label
+            ><select id="task-priority">
+              <option>Normal</option>
+              <option>High</option>
+              <option>Low</option></select
+            ><button class="button" type="submit">Add task</button>
+            <p id="task-message" role="status"></p>
+          </form>
+        </section>
+        <section class="box">
+          <h2>My Tasks</h2>
+          <div class="filters" role="group" aria-label="Filter tasks">
+            <button aria-pressed="true" data-filter="all">All</button
+            ><button aria-pressed="false" data-filter="pending">To do</button
+            ><button aria-pressed="false" data-filter="completed">
+              Completed
+            </button>
+          </div>
+          <ul id="task-list" class="task-list"></ul>
+          <p id="storage-note" class="muted">
+            Saved on this device only.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        © 2026 Arowolo Olawale Temidayo. COS 106 Term Project, MIVA Open
+        University.
+      </p>
+    </footer>
+    <dialog id="demo">
+      <button class="close" aria-label="Close demo">×</button>
+      <div id="demo-body"></div>
+    </dialog>
+  </body>
+</html>

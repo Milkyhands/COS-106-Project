@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Arowolo Olawale Temidayo's student portfolio, projects and academic planner."
+    />
+    <title>About Me | Arowolo Olawale Temidayo</title>
+    <link rel="icon" href="assets/mark.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="index.html">Arowolo Olawale Temidayo</a>
+      <button class="menu" aria-expanded="false" aria-controls="navigation">
+        Menu ☰
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Academic Planner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-title">
+        <h1>About Me</h1>
+        <p>
+          My name is Arowolo Olawale Temidayo. I study Computer Science at MIVA
+          Open University.
+        </p>
+      </section>
+      <div class="two-column">
+        <section class="box">
+          <h2>Background</h2>
+          <p>
+            I like building things on the computer and seeing them work. This
+            website brings together my COS 106 coursework, practice projects and
+            a planner for my study tasks.
+          </p>
+          <h3>Career aspirations</h3>
+          <p>
+            I want to become a software developer, grow my computer science
+            skills, and build websites and apps that are easy for everyone to
+            use.
+          </p>
+          <h3>Hobbies and interests</h3>
+          <ul class="interests">
+            <li>Web design</li>
+            <li>Solving logic problems</li>
+            <li>Learning new technologies</li>
+            <li>Helping other students</li>
+          </ul>
+        </section>
+        <section class="box">
+          <h2>Technical skills</h2>
+          <dl class="skills">
+            <dt>HTML5</dt>
+            <dd>Page structure, headings, lists, tables and forms</dd>
+            <dt>CSS3</dt>
+            <dd>Colours, layout with Grid and Flexbox, mobile-friendly pages</dd>
+            <dt>JavaScript</dt>
+            <dd>Functions, arrays, events and changing the page with the DOM</dd>
+            <dt>Git and GitHub</dt>
+            <dd>Saving versions of my work and sharing my code</dd>
+          </dl>
+        </section>
+      </div>
+      <section class="box">
+        <h2>Education</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Programme / course</th>
+                <th>Institution</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>B.Sc. Computer Science</td>
+                <td>MIVA Open University</td>
+                <td><span class="tag">In progress</span></td>
+              </tr>
+              <tr>
+                <td>COS 106: Introduction to Web Technologies</td>
+                <td>MIVA Open University</td>
+                <td><span class="tag">Term project</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="box video-box">
+        <h2>Video</h2>
+        <video
+          controls
+          preload="metadata"
+          poster="assets/grade.svg"
+          aria-label="Portfolio video introduction"
+        >
+          <source src="assets/walkthrough.mp4" type="video/mp4" />
+          <track
+            default
+            kind="captions"
+            src="assets/captions.vtt"
+            srclang="en"
+            label="English"
+          />
+          Your browser does not support video.
+        </video>
+        <details>
+          <summary>Transcript</summary>
+          <p>
+            Welcome to my student portfolio. Explore my profile and projects.
+            Organise study tasks with the academic planner. Use the contact form
+            to prepare a message.
+          </p>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <p>
+        © 2026 Arowolo Olawale Temidayo. COS 106 Term Project, MIVA Open
+        University.
+      </p>
+    </footer>
+    <dialog id="demo">
+      <button class="close" aria-label="Close demo">×</button>
+      <div id="demo-body"></div>
+    </dialog>
+  </body>
+</html>

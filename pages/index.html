@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Arowolo Olawale Temidayo's student portfolio, projects and academic planner."
+    />
+    <title>Home | Arowolo Olawale Temidayo</title>
+    <link rel="icon" href="assets/mark.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="index.html">Arowolo Olawale Temidayo</a>
+      <button class="menu" aria-expanded="false" aria-controls="navigation">
+        Menu ☰
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Academic Planner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="box hero">
+        <div>
+          <h1>Hi, I'm Arowolo Olawale Temidayo</h1>
+          <p>
+            Computer Science student at MIVA Open University. This is my COS 106
+            term project: a personal portfolio with projects, a study planner
+            and a contact form.
+          </p>
+          <div class="actions">
+            <a class="button" href="projects.html">See my projects</a>
+            <a class="button secondary" href="about.html">About me</a>
+          </div>
+        </div>
+        <img
+          class="profile-photo"
+          src="assets/profile.jpg"
+          alt="Portrait of Arowolo Olawale Temidayo smiling, wearing glasses and a beige jacket"
+          width="819"
+          height="1024"
+        />
+      </section>
+      <section>
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <a href="projects.html">View all</a>
+        </div>
+        <div class="project-grid">
+          <a class="project-card" href="projects.html#grade"
+            ><img
+              src="assets/grade.svg"
+              alt="Grade calculator interface illustration"
+            />
+            <div>
+              <h3>Grade Calculator</h3>
+            </div></a
+          ><a class="project-card" href="planner.html"
+            ><img
+              src="assets/planner.svg"
+              alt="Academic planner interface illustration"
+            />
+            <div>
+              <h3>Academic Planner</h3>
+            </div></a
+          >
+        </div>
+      </section>
+      <section class="box planner-cta">
+        <h2>Academic Planner</h2>
+        <a class="button" href="planner.html">Open planner</a>
+      </section>
+    </main>
+    <footer>
+      <p>
+        © 2026 Arowolo Olawale Temidayo. COS 106 Term Project, MIVA Open
+        University.
+      </p>
+    </footer>
+    <dialog id="demo">
+      <button class="close" aria-label="Close demo">×</button>
+      <div id="demo-body"></div>
+    </dialog>
+  </body>
+</html>
